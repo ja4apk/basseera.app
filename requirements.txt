@@ -1,0 +1,49 @@
+# ===================================================================================
+#  ملف: requirements.txt (متطلبات التطبيق)
+# ===================================================================================
+
+# OVOS Core Components
+ovos-core>=0.0.8
+ovos-messagebus>=0.0.8
+ovos-audio>=0.0.8
+ovos-skills>=0.0.8
+ovos-listener>=0.0.8
+
+# OVOS Configuration
+ovos-config>=0.0.8
+ovos-utils>=0.0.8
+
+# Speech Recognition
+speech-recognition>=3.10.0
+pyaudio>=0.2.11
+
+# Text-to-Speech
+pyttsx3>=2.90
+gTTS>=2.3.0
+
+# Audio Processing
+sounddevice>=0.4.6
+soundfile>=0.12.1
+numpy>=1.21.0
+
+# Natural Language Processing
+nltk>=3.8
+spacy>=3.4.0
+
+# Web Framework (for web interface)
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Database
+sqlite3
+
+# Utilities
+requests>=2.28.0
+pyyaml>=6.0
+click>=8.1.0
+colorama>=0.4.6
+
+# Development Tools
+pytest>=7.2.0
+black>=22.10.0
+flake8>=5.0.0

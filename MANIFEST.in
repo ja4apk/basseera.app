@@ -1,0 +1,62 @@
+# ===================================================================================
+#  ملف: MANIFEST.in (تحديد الملفات المضمنة في الحزمة)
+# ===================================================================================
+
+# تضمين ملفات التوثيق
+include README.md
+include LICENSE
+include CHANGELOG.md
+
+# تضمين ملفات الإعداد
+include requirements.txt
+include setup.py
+include first_boot_setup.sh
+
+# تضمين ملفات التكوين
+recursive-include config *.yaml *.yml *.json
+recursive-include config *.conf *.cfg
+
+# تضمين المهارات المخصصة
+recursive-include skills *.py *.yaml *.yml *.json
+recursive-include skills *.txt *.md
+
+# تضمين الموارد
+recursive-include resources *.wav *.mp3 *.ogg
+recursive-include resources *.png *.jpg *.jpeg *.gif *.svg
+recursive-include resources *.json *.yaml *.yml
+
+# تضمين ملفات الترجمة
+recursive-include locale *.po *.mo *.pot
+
+# تضمين النماذج والبيانات
+recursive-include models *.bin *.model *.pkl
+recursive-include data *.json *.csv *.txt
+
+# استبعاد الملفات غير المرغوب فيها
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .git*
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude *.dylib
+global-exclude *.dll
+
+# استبعاد ملفات التطوير
+exclude .gitignore
+exclude .flake8
+exclude .mypy.ini
+exclude pytest.ini
+exclude tox.ini
+
+# استبعاد مجلدات التطوير
+prune .git
+prune .pytest_cache
+prune .mypy_cache
+prune .tox
+prune venv
+prune env
+prune logs
+prune tmp
+prune cache
