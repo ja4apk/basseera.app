@@ -22,7 +22,7 @@
 
 **1. استنساخ المشروع:**
 ```bash
-git clone [https://github.com/ja4apk/basseera.app.git](https://github.com/ja4apk/basseera.app.git)
+git clone https://github.com/ja4apk/basseera.app.git
 cd basseera.app
 ```
 
